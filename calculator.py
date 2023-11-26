@@ -13,11 +13,20 @@ Ansh - it is String
 
 """
 
-
+op = input("Which operator >: ")
 x = input("What is your first number >: ")
 y = input("What is your second number >: ")
 
-z = float(x) * float(y)
-
+if op=="*":
+    z = float(x) * float(y)
+elif op=="+":
+    z = float(x) + float(y)   
+elif op=="-":
+    z = float(x) - float(y)
+elif op=="/":
+    z = float(x) / float(y)            
+else:
+    print("We are working hard on adding support for " + op)
+    z=0    
 print( z)
 
